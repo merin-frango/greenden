@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenden</title>
+    <link rel="icon" href="./images/main/logo-mini.png">
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
@@ -12,9 +13,8 @@
 <body>
 
     <!-- Navbar -->
-    <div class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0">
-        <h1 class="text-2xl">GREENDEN</h1>
-
+    <div class="bg-green-200 py-1 px-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <img src="./images/main/logo.png" alt="logo" style="width: 100px; height: 50px;">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -22,38 +22,39 @@
 
         <ul class="flex gap-5 text-gray-600 hidden md:flex">
             <li>
-                <a class="hover:underline hover:text-black" href="#">Home</a>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
             </li>
             <li>
-                <a class="hover:underline hover:text-black" href="#">Product</a>
+                <a class="hover:underline hover:text-black" href="product.html">Product</a>
             </li>
             <li>
-                <a class="hover:underline hover:text-black" href="#">Contact</a>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
             </li>
         </ul>
     </div>
 
     <!-- Header section -->
-    <div class="bg-green-200 py-11 px-7 flex justify-center">
+    <div class="bg-green-200 py-8 px-7 flex justify-center md:py-11">
         <div>
             <p class="mb-5 text-xs md:text-base">We offer you a wide range of Artificial and Natural Flowers</p>
             <h2 class="text-3xl font-bold mb-5 md:text-5xl">Plants for your Interior</h2>
             <div>
-                <button class="bg-black text-white rounded p-2">Shop now</button>
-                <button class="border border-black p-2 rounded ">Watch video</button>
+                <button class="bg-black text-white rounded p-2 text-xs md:text-base">Shop now</button>
+                <button class="border border-black p-2 rounded text-xs md:text-base">Watch video</button>
             </div>
-            <p class="mt-4 text-xs md:text-base">160+ Plant Species | 100+ Clients</p>
+            <p class="mt-4 text-xs md:text-base">160+ Plant Species | 1000+ Clients</p>
         </div>
 
         <div class="hidden md:block px-12">
-            <img src="./images/header-img.avif" alt="Header Image" class="w-60">
+            <img src="./images/main/header-img.jpg" alt="Header Image" class="w-60">
         </div>
     </div>
 
     <!-- About us -->
     <div class="text-center mt-7">
         <h1 class="text-3xl font-bold">About us</h1>
-        <p>For lovers of greenery who seek beauty, balance, and a touch of nature in every space.</p>
+        <p class="text-xs pt-1 md:text-base">For lovers of greenery who seek beauty, balance, and a touch of nature in
+            every space.</p>
 
         <div class="md:flex">
             <div class="border border-black p-2 m-6">
@@ -85,10 +86,133 @@
                         d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
                 </svg>
                 <h2 class="text-2xl font-medium">24/7 Support</h2>
-                <p>We’re here whenever you need us! Our friendly support team is available 24/7 to assist you with
+                <p>We're here whenever you need us! Our friendly support team is available 24/7 to assist you with
                     questions, orders, or anything plant-related.</p>
             </div>
         </div>
+    </div>
+
+    <!-- Best Seller -->
+    <div class="pt-5 text-center">
+        <h1 class="text-3xl font-bold">Best Seller</h1>
+        <p class="pt-1 text-xs md:text-base">Top-selling favorites that bring effortless greenery into your home or
+            office.</p>
+
+        <div class="grid grid-cols-2 mt-7 gap-6 mx-5  md:grid-cols-4">
+            <div>
+                <img src="./images/bestseller/bestseller-1.jpg" alt="Plastic Pot"
+                    class="inline hover:shadow-2xl transform hover:-translate-y-2 rounded-lg">
+                <h1 class="text-xs font-medium mt-2 px-5 hover:underline md:text-base">Faux Realistic Ficus Bonsai With
+                    Black Plastic Pot - 4.9 Feet</h1>
+                <p class="text-xs md:text-base">₹6,649</p>
+            </div>
+
+            <div>
+                <img src="./images/bestseller/bestseller-2.jpg" alt="Plastic Pot"
+                    class="inline hover:shadow-2xl transform hover:-translate-y-2 rounded-lg">
+                <h1 class="text-xs font-medium mt-2 px-5 hover:underline md:text-base">Faux Realistic Schefflera Plant
+                    With Black Plastic Pot - 3 Feet</h1>
+                <p class="text-xs md:text-base">₹2,849.00</p>
+            </div>
+
+            <div>
+                <img src="./images/bestseller/bestseller-3.jpg" alt="Plastic Pot"
+                    class="inline hover:shadow-2xl transform hover:-translate-y-2 rounded-lg">
+                <h1 class="text-xs font-medium mt-2 px-5 hover:underline md:text-base">Artificial Peace Lily With Pot
+                    (Set Of Two) - 1 Feet</h1>
+                <p class="text-xs md:text-base">₹1,139.00</p>
+            </div>
+
+            <div>
+                <img src="./images/bestseller/bestseller-4.jpg" alt="Plastic Pot"
+                    class="inline hover:shadow-2xl transform hover:-translate-y-2 rounded-lg">
+                <h1 class="text-xs font-medium mt-2 px-5 hover:underline md:text-base">Artificial Garden Croton Plant
+                    With Plastic Pot - 1 Feet</h1>
+                <p class="text-xs md:text-base">₹949.00</p>
+            </div>
+
+            <div>
+                <img src="./images/bestseller/bestseller-5.jpg" alt="Yellow"
+                    class="inline hover:shadow-2xl transform hover:-translate-y-2 rounded-lg">
+                <h1 class="text-xs font-medium mt-2 px-5 hover:underline md:text-base">Ivania Vase With Dry Flowers -
+                    Yellow</h1>
+                <p class="text-xs md:text-base">₹1,488.00</p>
+            </div>
+
+            <div>
+                <img src="./images/bestseller/bestseller-6.jpg" alt="Orange"
+                    class="inline hover:shadow-2xl transform hover:-translate-y-2 rounded-lg">
+                <h1 class="text-xs font-medium mt-2 px-5 hover:underline md:text-base">Alsike Vase With Dry Flowers -
+                    Orange</h1>
+                <p class="text-xs md:text-base">₹1,953.00</p>
+            </div>
+
+            <div>
+                <img src="./images/bestseller/bestseller-7.jpg" alt="Red"
+                    class="inline hover:shadow-2xl transform hover:-translate-y-2 rounded-lg">
+                <h1 class="text-xs font-medium mt-2 px-5 hover:underline md:text-base ">Ivania Vase With Dry Flowers -
+                    Red</h1>
+                <p class="text-xs md:text-base">₹1,860.00</p>
+            </div>
+
+            <div>
+                <img src="./images/bestseller/bestseller-8.jpg" alt="Blue"
+                    class="inline hover:shadow-2xl transform hover:-translate-y-2 rounded-lg">
+                <h1 class="text-xs font-medium mt-2 px-5 hover:underline md:text-base">Edolie Vase With Dry Flowers -
+                    Blue</h1>
+                <p class="text-xs md:text-base">₹1,860.00</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Customer Review -->
+    <div class="pt-5 mt-5">
+        <h1 class="text-3xl font-bold text-center">Customer Reviews</h1>
+        <p class="pt-1 text-xs text-center md:text-base">Customer stories that show the beauty and quality of our
+            products.</p>
+
+        <div class="grid grid-rows-3 m-5 gap-3">
+            <div class="bg-green-800 p-5">
+                <p class="text-yellow-300 font-bold text-xs md:text-base">🌿Ritika S.</p>
+                <p class="text-xs text-white mt-2 md:text-base">"I was amazed at how real the plant looks! It added so
+                    much warmth to my space, and I love not having to worry about watering or sunlight. Totally worth
+                    it!"</p>
+            </div>
+
+            <div class="bg-green-800 p-5">
+                <p class="text-yellow-300 font-bold text-xs md:text-base">🌿Arjun M.</p>
+                <p class="text-xs text-white mt-2 md:text-base">"The quality exceeded my expectations. It arrived
+                    quickly, well-packaged, and looks fantastic in my office. I've already gotten so many
+                    compliments—people can’t believe it’s not real!"</p>
+            </div>
+
+            <div class="bg-green-800 p-5">
+                <p class="text-yellow-300 font-bold text-xs md:text-base">🌿Divya P.</p>
+                <p class="text-xs text-white mt-2 md:text-base">"This plant brought life to my living room! The texture,
+                    color, and detailing are spot on. Plus, customer support was super helpful when I had a delivery
+                    question. Highly recommend!"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- News letter -->
+    <div class="text-center mt-10">
+        <h1 class="text-3xl font-bold">Join our News Letter</h1>
+        <p class="pt-1 text-xs md:text-base">Join our green-loving community and be the first to know about sales,
+            trends, and more!</p>
+        <input type="text" class="border border-black rounded p-2 m-3" style="width: 80%;">
+        <br>
+        <button class="bg-black rounded text-white p-3 m-2 underline">Subscribe</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-green-200 p-10 mt-10">
+        <h1 class="text-3xl font-bold md:text-4xl">Greenden</h1>
+        <p class="pt-5 text-xs md:text-base md:pt-2">Designed to stay green and gorgeous, our plants make every space
+            feel alive.</p>
+        <p class="pt-8 text-xs md:text-base">&copy;2021 <a class="hover:underline" href="index.html">greenden.com</a>
+        </p>
     </div>
 
 </body>
